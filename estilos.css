@@ -1,44 +1,49 @@
-/* Reset y cuerpo */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #fff0f5;
+  background: #fffafc;
   color: #4a4a4a;
   text-align: center;
+}
+
+/* LOGO */
+.logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 /* ENCABEZADO */
 header {
   background: linear-gradient(to right, #ffdce1, #ffeef1);
   padding: 40px 20px;
-  color: #e75480;
+  border-bottom: 2px solid #f8c6d8;
 }
 
-h1 {
-  font-size: 3em;
-  font-family: 'Comic Sans MS', cursive;
-  margin-bottom: 10px;
+header h1 {
+  font-size: 2.5em;
+  color: #e75480;
+  margin: 0;
 }
 
 header p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #a24665;
 }
 
-/* MENÚ + BUSCADOR */
+/* MENÚ */
 nav {
   background: #fff;
   padding: 20px;
   border-bottom: 2px solid #ffb6c1;
 }
 
-nav input.buscador {
+.buscador {
   padding: 10px;
   border-radius: 30px;
   border: 1px solid #ffb6c1;
   margin-bottom: 10px;
   width: 200px;
-  font-size: 1em;
 }
 
 nav ul {
@@ -53,28 +58,21 @@ nav ul li a {
   text-decoration: none;
   color: #d6336c;
   font-weight: bold;
-  transition: background 0.3s;
 }
 
-nav ul li a:hover {
-  background: #ffe6ea;
-  padding: 5px 10px;
-  border-radius: 15px;
-}
-
-/* HERO SECTION */
+/* HERO SECTION con imagen personalizada */
 .hero {
-  background: url('https://i.imgur.com/njRnt6A.jpg') no-repeat center center;
+  background: url('fondo-local.jpg') no-repeat center center;
   background-size: cover;
-  padding: 100px 20px;
+  padding: 120px 20px;
   color: white;
 }
 
 .hero-texto {
   background-color: rgba(0, 0, 0, 0.4);
-  display: inline-block;
   padding: 30px;
   border-radius: 15px;
+  display: inline-block;
 }
 
 /* CONTENIDO */
@@ -92,7 +90,6 @@ nav ul li a:hover {
   font-size: 1.1em;
   max-width: 700px;
   margin: auto;
-  color: #555;
 }
 
 /* FOOTER */
@@ -100,10 +97,9 @@ footer {
   background: #ffc0cb;
   color: white;
   padding: 20px;
-  font-size: 0.9em;
 }
 
-/* BOTÓN FLOTANTE */
+/* BOT FLOTANTE */
 .boton-flotante {
   position: fixed;
   bottom: 20px;
@@ -112,13 +108,12 @@ footer {
   color: white;
   padding: 15px;
   border-radius: 50%;
-  cursor: pointer;
   font-size: 1.5em;
+  cursor: pointer;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
   z-index: 1000;
 }
 
-/* MENÚ DEL BOT */
 .bot-menu {
   display: none;
   position: fixed;
