@@ -1,69 +1,205 @@
+
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cuerpo general */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff5f9;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background-color: #ffd6e0;
+  color: #6c3a4f;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Menú de navegación */
+nav {
+  background-color: #fff0f5;
+  border-bottom: 2px solid #ffb6c1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px 10px;
+}
+
+nav .buscador {
+  padding: 10px 15px;
+  border: 1px solid #ffb6c1;
+  border-radius: 30px;
+  width: 220px;
+  font-size: 1em;
+  outline: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #d6336c;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #ffe3ec;
+}
+
+/* Hero principal */
+.hero {
+  background-image: url('https://i.imgur.com/njRnt6A.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.hero-texto {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 15px;
+  display: inline-block;
+  max-width: 90%;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Sección contenido */
+.contenido {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contenido h3 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #e6397e;
+}
+
+.contenido p {
+  font-size: 1.1em;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Pie de página */
+footer {
+  background-color: #ffc0cb;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Botón flotante */
+.boton-flotante {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #ff7f9f;
+  color: white;
+  padding: 16px 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.boton-flotante:hover {
+  background-color: #ff5c80;
+}
+
+/* Menú tipo bot desplegable */
+.bot-menu {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 25px;
+  background-color: #fff;
+  border: 2px solid #ffb6c1;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.bot-menu a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #d6336c;
+  font-weight: bold;
+  border-bottom: 1px solid #ffe0e9;
+}
+
+.bot-menu a:last-child {
+  border-bottom: none;
+}
+
+.bot-menu.mostrar {
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
   }
-  
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #fffafc;
-    color: #444;
+
+  .hero h2 {
+    font-size: 1.8em;
   }
-  
-  header {
-    background-color: #ffc0cb;
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
+
+  nav .buscador {
+    width: 100%;
+    margin-bottom: 10px;
   }
-  
+
   nav {
-    background-color: #ffe6ea;
-    padding: 15px 0;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   nav ul {
-    list-style: none;
-    text-align: center;
+    flex-direction: column;
+    gap: 10px;
   }
-  
-  nav ul li {
-    display: inline-block;
-    margin: 0 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #d6336c;
-    font-weight: bold;
-    font-size: 1.1em;
-  }
-  
-  .hero {
-    background-image: url('https://i.imgur.com/njRnt6A.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 120px 20px;
-    text-align: center;
-    color: white;
-  }
-  
-  .hero-texto {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 30px;
-    border-radius: 15px;
-    display: inline-block;
-  }
-  
-  .contenido {
-    text-align: center;
-    padding: 60px 20px;
-  }
-  
-  footer {
-    background-color: #ffc0cb;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
+}
