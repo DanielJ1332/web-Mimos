@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffafc;
+  color: #5e5e5e;
+}
+
+header {
+  background: #ffc0cb;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+nav {
+  background: #ffe6ea;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #d6336c;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url('https://i.imgur.com/njRnt6A.jpg'); /* Puedes reemplazar por otra imagen */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+.contenido {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer {
+  background: #ffc0cb;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
