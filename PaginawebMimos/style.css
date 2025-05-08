@@ -1,60 +1,67 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Segoe UI', sans-serif;
-  background: #fffafc;
-  color: #5e5e5e;
+  background-color: #fffafc;
+  color: #444;
 }
 
 header {
-  background: #ffc0cb;
-  padding: 20px;
-  text-align: center;
+  background-color: #ffc0cb;
   color: white;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
+  padding: 30px 20px;
+  text-align: center;
 }
 
 nav {
-  background: #ffe6ea;
-  padding: 10px;
+  background-color: #ffe6ea;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
   text-align: center;
 }
 
-nav a {
-  margin: 0 15px;
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
   text-decoration: none;
   color: #d6336c;
   font-weight: bold;
+  font-size: 1.1em;
 }
 
 .hero {
-  background-image: url('https://i.imgur.com/njRnt6A.jpg'); /* Puedes reemplazar por otra imagen */
+  background-image: url('https://i.imgur.com/njRnt6A.jpg'); /* Imagen de fondo */
   background-size: cover;
   background-position: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
   text-align: center;
   color: white;
 }
 
-.hero h2 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.2em;
+.hero-texto {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 15px;
+  display: inline-block;
 }
 
 .contenido {
-  padding: 40px 20px;
   text-align: center;
+  padding: 60px 20px;
 }
 
 footer {
-  background: #ffc0cb;
+  background-color: #ffc0cb;
   color: white;
   text-align: center;
   padding: 20px;
