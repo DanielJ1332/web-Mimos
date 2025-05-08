@@ -41,7 +41,7 @@ header {
   margin: 0;
 }
 
-/* MENÚ DE NAVEGACIÓN */
+/* MENÚ */
 nav {
   background: #fff;
   padding: 20px;
@@ -77,9 +77,9 @@ nav ul li a:hover {
   border-radius: 20px;
 }
 
-/* HERO CON IMAGEN DE FONDO */
+/* HERO SECTION CON FONDO DESDE GITHUB */
 .hero {
-  background: url('fondo-local.jpg') no-repeat center center;
+  background: url('https://raw.githubusercontent.com/usuario/web-Mimos/main/fondo-local.jpg') no-repeat center center;
   background-size: cover;
   padding: 120px 20px;
   color: white;
@@ -110,7 +110,7 @@ nav ul li a:hover {
   color: #555;
 }
 
-/* PIE DE PÁGINA */
+/* FOOTER */
 footer {
   background: #ffc0cb;
   color: white;
