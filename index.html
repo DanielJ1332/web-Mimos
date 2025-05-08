@@ -4,18 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mimos - Todo para tu bebé</title>
-  <!-- Enlace al archivo CSS -->
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
 
-  <!-- ENCABEZADO -->
+  <!-- Encabezado con logo -->
   <header>
+    <img src="logo-mimos.jpg" alt="Logo de Mimos" class="logo" />
     <h1>Mimos</h1>
     <p>Todo lo que tu bebé necesita, con amor y cuidado</p>
   </header>
 
-  <!-- MENÚ DE NAVEGACIÓN CON BUSCADOR -->
+  <!-- Menú de navegación -->
   <nav>
     <input type="text" class="buscador" placeholder="Buscar producto..." />
     <ul>
@@ -26,7 +26,7 @@
     </ul>
   </nav>
 
-  <!-- SECCIÓN PRINCIPAL -->
+  <!-- Sección principal con fondo personalizado -->
   <section class="hero">
     <div class="hero-texto">
       <h2>Bienvenidos a Mimos</h2>
@@ -34,27 +34,26 @@
     </div>
   </section>
 
-  <!-- SECCIÓN DE CONTENIDO -->
+  <!-- Contenido -->
   <section class="contenido">
     <h3>¿Qué ofrecemos?</h3>
     <p>Ropa, juguetes, accesorios, cuidado personal y mucho más para tu bebé.</p>
   </section>
 
-  <!-- BOTÓN FLOTANTE -->
+  <!-- Botón flotante -->
   <div class="boton-flotante" onclick="toggleBot()">☰</div>
 
-  <!-- MENÚ DEL BOT FLOTANTE -->
+  <!-- Menú bot -->
   <div class="bot-menu" id="botMenu">
     <a href="https://wa.me/1234567890" target="_blank">💬 WhatsApp</a>
     <a href="https://instagram.com/mimos_bebe" target="_blank">📷 Instagram</a>
   </div>
 
-  <!-- PIE DE PÁGINA -->
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Mimos. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- SCRIPT PARA BOTÓN FLOTANTE -->
   <script>
     function toggleBot() {
       document.getElementById("botMenu").classList.toggle("mostrar");
