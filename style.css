@@ -1,44 +1,42 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Base global */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fffafc;
-  color: #333;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #fff0f5 url('https://i.imgur.com/4lCO7L9.png') repeat center center;
+  background-size: cover;
+  color: #4a4a4a;
+  min-height: 100vh;
   text-align: center;
 }
 
-/* ENCABEZADO */
+/* Encabezado */
 header {
-  background: linear-gradient(to right, #ffe0ec, #ffd3ea);
+  background: linear-gradient(to right, #ffdce1, #ffeef1);
   padding: 40px 20px;
-  border-bottom: 2px solid #ffc1d3;
+  border-bottom: 2px solid #f8c6d8;
 }
 
-.contenedor-header h1 {
+header h1 {
   font-size: 3em;
   color: #e75480;
   font-family: 'Comic Sans MS', cursive;
 }
 
-.contenedor-header p {
+header p {
   font-size: 1.2em;
   color: #a24665;
 }
 
-/* NAVEGACIÓN */
+/* Menú + buscador */
 nav {
-  background-color: #fff0f5;
-  border-bottom: 2px solid #ffc0cb;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 15px 10px;
+  border-bottom: 2px solid #ffc0cb;
 }
 
 .menu-contenedor {
   max-width: 800px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .buscador {
@@ -66,14 +64,14 @@ nav {
   font-size: 1em;
   padding: 10px 18px;
   border-radius: 20px;
-  transition: background-color 0.3s;
+  transition: 0.3s;
 }
 
 .menu li a:hover {
   background-color: #ffe6ea;
 }
 
-/* SECCIÓN PRINCIPAL */
+/* Hero */
 .hero {
   background-image: url('https://i.imgur.com/njRnt6A.jpg');
   background-size: cover;
@@ -90,26 +88,25 @@ nav {
   max-width: 90%;
 }
 
-/* CONTENIDO */
+/* Contenido */
 .contenido {
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 50px 20px;
-  background-color: #fff;
 }
 
 .contenido h3 {
   font-size: 2em;
-  margin-bottom: 10px;
   color: #e6397e;
+  margin-bottom: 10px;
 }
 
 .contenido p {
   font-size: 1.1em;
   max-width: 700px;
   margin: auto;
-  color: #555;
 }
 
-/* PIE DE PÁGINA */
+/* Pie de página */
 footer {
   background-color: #ffc0cb;
   color: white;
@@ -117,7 +114,7 @@ footer {
   font-size: 0.9em;
 }
 
-/* BOTÓN FLOTANTE */
+/* Botón flotante */
 .boton-flotante {
   position: fixed;
   bottom: 25px;
@@ -132,6 +129,7 @@ footer {
   z-index: 1000;
 }
 
+/* Menú del bot */
 .bot-menu {
   display: none;
   position: fixed;
@@ -140,7 +138,7 @@ footer {
   background: white;
   border: 2px solid #ffc0cb;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 999;
 }
 
