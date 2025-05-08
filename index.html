@@ -14,6 +14,7 @@
   </header>
 
   <nav>
+    <input type="text" placeholder="Buscar producto..." class="buscador" />
     <ul>
       <li><a href="#">Inicio</a></li>
       <li><a href="#">Productos</a></li>
@@ -27,6 +28,38 @@
       <h2>Bienvenidos a Mimos</h2>
       <p>Dulzura y calidad para los más pequeños de la casa</p>
     </div>
+  </section>
+
+  <section class="contenido">
+    <h3>¿Qué ofrecemos?</h3>
+    <p>Ropa, juguetes, accesorios, cuidado personal y mucho más para tu bebé.</p>
+  </section>
+
+  <!-- Botón flotante -->
+  <div class="boton-flotante" onclick="toggleBot()">
+    ☰
+  </div>
+
+  <!-- Bot desplegable -->
+  <div class="bot-menu" id="botMenu">
+    <a href="https://wa.me/1234567890" target="_blank">💬 WhatsApp</a>
+    <a href="https://instagram.com/mimos_bebe" target="_blank">📷 Instagram</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Mimos. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function toggleBot() {
+      const menu = document.getElementById("botMenu");
+      menu.classList.toggle("mostrar");
+    }
+  </script>
+
+</body>
+</html>
+
   </section>
 
   <section class="contenido">
